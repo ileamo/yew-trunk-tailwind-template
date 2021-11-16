@@ -45,6 +45,7 @@ impl Component for Model {
     fn view(&self) -> Html {
         html! {
             <div>
+                <p class=classes!("bg-red-100")>{"Test!"}</p>
                 <button onclick=self.link.callback(|_| Msg::AddOne)>{ "+1" }</button>
                 <button onclick=self.link.callback(|_| Msg::SubOne)>{ "-1" }</button>
                 <p>{ self.value }</p>

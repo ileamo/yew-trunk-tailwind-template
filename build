@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# Purge tailwind CSS classes
+NODE_ENV=production tailwindcss -c ./tailwind.config.js -o ./tailwind.css --minify
+# Build release
+trunk build --public-url "/"  --release
+# Get full tailwind.css file
+tailwindcss -o ./tailwind.css
