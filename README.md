@@ -34,3 +34,6 @@ trunk build --public-url "/"  --release
 # Optionally restore full tailwind.css file
 tailwindcss -o ./tailwind.css
 ```
+
+## References
+https://dev.to/arctic_hen7/how-to-set-up-tailwind-css-with-yew-and-trunk-il9
